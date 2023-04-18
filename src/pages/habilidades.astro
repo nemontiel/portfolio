@@ -1,0 +1,49 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Side from "../components/Side.astro";
+---
+<meta charset="utf-8">
+<Navbar />
+<Side />
+<div class="skills w-full grid grid-cols-1 place-items-center bg-slate-900">
+    <div class="grid grid-cols-4 gap-24 text-amber-500 fade-right">
+        <div class="grid place-items-center bg-slate-700 w-28 h-28 rounded-md" >
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <p>React</p>
+        </div>
+        <div class="grid place-items-center bg-slate-700 w-28 h-28 rounded-md">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+            <p>Node</p>
+        </div>
+        <div class="grid place-items-center bg-slate-700 w-28 h-28 rounded-md">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+            <p>PostgreSQL</p>
+        </div>
+        <div class="grid place-items-center bg-slate-700 w-28 h-28 rounded-md">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+            <p>MongoDB</p>
+        </div>
+        <div class="grid place-items-center bg-slate-700 w-28 h-28 rounded-md">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+            <p>Go</p>
+        </div>
+        <div class="grid place-items-center bg-slate-700 w-28 h-28 rounded-md">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+            <p>Docker</p>
+        </div>
+        <div class="grid place-items-center bg-slate-700 w-28 h-28 rounded-md">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            <p>GIT</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    img {
+        height: 75px;
+        width: 75px;
+    }
+    .skills {
+        height: calc(100vh - 56px);
+    }
+</style>

@@ -1,0 +1,66 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Side from "../components/Side.astro";
+---
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+<Navbar />
+<Side />
+<div class="grid grid-cols-1 place-items-center bg-slate-900 about">
+    <div class="ml-40 fade-left">
+        <h3 class="p-2 text-4xl text-amber-500">Acerca de mí</h3>
+        <p class="p-2 text-xl text-slate-300">
+            Mi nombre es Nicolás Montiel, soy desarrollador full-stack. 
+            Estoy capacitado en tecnologías que me permiten desarrollar aplicaciones web completas y escalables. 
+            Soy una persona perfeccionista y analítica, mis principales características 
+            son la atención a los detalles, solución de problemas, prudencia, orientación a la tarea y tolerancia a la presión.
+            Estoy buscando una organización que me permita y fomente mi crecimiento personal.
+        </p>
+    </div>
+    
+</div>
+<style>
+.about {
+    height: calc(100vh - 56px);
+  }
+ 
+  /* .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }  */
+  
+  .fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .fade-right {
+    animation: fade-right 1s ease-in;
+  }
+ 
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+</style>
+

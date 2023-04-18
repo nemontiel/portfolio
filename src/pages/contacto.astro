@@ -1,0 +1,81 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Side from "../components/Side.astro";
+---
+<meta charset="utf-8">
+<Navbar />
+<Side />
+<div class="grid place-content-center bg-slate-900 contacto">
+    <div class="w-4/5 p-2 gap-5">
+        <h3 class="text-5xl grid place-content-center text-amber-500 reveal fade-bottom">Contacto</h3>
+        <p class="grid place-content-center p-2 text-2xl text-slate-200 reveal second">
+            Para consultas, sugerencias o entrar en contacto no dudes en envíarme un correo, 
+            añadirme a Linkedin y/o seguirme en Github.
+        </p>
+        <div class="w-full flex justify-around text-slate-200">
+            <a href="https://www.linkedin.com/in/nemontiel" title="Linkedin" class="reveal third"><img src="/linkedinw.png" alt="linkedin" class="h-10 w-10" />Linkedin</a>
+            <a href="https://www.github.com/nemontiel" title="Github" class=" reveal fourth"><img src="/githubw.png" alt="github" class="h-10 w-10"/>Github</a>
+            <a href="mailto:nemontiel@gmail.com" class="reveal fifth"><img src="/mailb.png" alt="correo" class="h-10 w-10"/>Correo</a>
+        </div>
+        
+    </div>
+</div>
+<style>
+  .contacto { 
+    height: calc(100vh - 56px);
+  }
+  fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .second {
+    animation: fade-bottom 1.25s ease-in;
+  }
+  .third {
+    animation: fade-bottom 1.50s ease-in;
+  }
+  .fourth {
+    animation: fade-bottom 1.75s ease-in;
+  }
+  .fifth {
+    animation: fade-bottom 2s ease-in;
+  }
+  .fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+</style>
+<script src="../scroll.js"></script>
+
